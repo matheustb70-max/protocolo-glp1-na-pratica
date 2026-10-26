@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" fill="none">
+  <defs>
+    <linearGradient id="left" x1="139" y1="-59" x2="339" y2="220" gradientUnits="userSpaceOnUse"><stop stop-color="#4b3222"/><stop offset=".2" stop-color="#251d17"/><stop offset=".5" stop-color="#12110e"/><stop offset=".75" stop-color="#080807"/><stop offset="1" stop-color="#17120e"/></linearGradient>
+    <linearGradient id="right" x1="1369" y1="-40" x2="1215" y2="290" gradientUnits="userSpaceOnUse"><stop stop-color="#2e231a"/><stop offset=".32" stop-color="#17130f"/><stop offset=".67" stop-color="#070706"/><stop offset="1" stop-color="#21160f"/></linearGradient>
+    <linearGradient id="edge" x1="10" y1="135" x2="1590" y2="135" gradientUnits="userSpaceOnUse"><stop stop-color="#bc7d4e" stop-opacity=".36"/><stop offset=".35" stop-color="#3b291c" stop-opacity=".15"/><stop offset=".7" stop-color="#302216" stop-opacity=".12"/><stop offset="1" stop-color="#ac7247" stop-opacity=".3"/></linearGradient>
+    <linearGradient id="fade" x1="800" y1="15" x2="800" y2="680" gradientUnits="userSpaceOnUse"><stop stop-color="#060605" stop-opacity="0"/><stop offset=".62" stop-color="#060605" stop-opacity=".75"/><stop offset="1" stop-color="#060605"/></linearGradient>
+    <radialGradient id="center" cx="0" cy="0" r="1" gradientTransform="translate(800 216) scale(620 350)" gradientUnits="userSpaceOnUse"><stop stop-color="#060605" stop-opacity=".94"/><stop offset=".7" stop-color="#060605" stop-opacity=".1"/><stop offset="1" stop-color="#060605" stop-opacity="0"/></radialGradient>
+  </defs>
+  <path d="M-110-95H733C532-17 371 66 213 126 87 173-3 250-97 326L-110-95Z" fill="url(#left)"/>
+  <path d="M-51 312C178 131 372 113 634 12 428 94 220 234-45 507L-51 312Z" fill="url(#left)" opacity=".64"/>
+  <path d="M879-106H1661V360C1528 235 1356 196 1198 133 1087 89 993 28 879-106Z" fill="url(#right)"/>
+  <path d="M1032 51C1242 147 1407 172 1661 235V470C1491 327 1298 230 1032 51Z" fill="url(#right)" opacity=".7"/>
+  <path d="M-76 270C146 90 388 79 669-17M-38 485C158 290 288 201 463 118M978-35C1210 132 1427 175 1638 259M1135 121C1349 227 1496 328 1645 451" stroke="url(#edge)" stroke-width="1.4"/>
+  <path d="M-36 384C154 229 301 187 465 112M1121 50C1354 177 1505 201 1641 270" stroke="#030303" stroke-width="23" opacity=".7"/>
+  <path fill="url(#center)" d="M0 0h1600v760H0z"/>
+  <path fill="url(#fade)" d="M0 0h1600v760H0z"/>
+</svg>
