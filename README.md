@@ -5,3 +5,5 @@ Página de vendas estática de João Paulo Mendes.
 HTML, CSS, JavaScript, imagens e fontes locais. Publicação pelo GitHub Pages, a partir da branch `main` e da raiz do repositório.
 
 O player da Vturb utiliza a configuração e os domínios autorizados no painel do serviço.
+
+Os parágrafos usam 16px. Todo o conteúdo abaixo do vídeo, incluindo o botão Hotmart, está no container `.oculto` (`display:none`) e aguarda a liberação da Vturb.

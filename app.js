@@ -12,6 +12,7 @@ const prev=document.querySelector('.carousel-prev');
 const next=document.querySelector('.carousel-next');
 const position=document.querySelector('.carousel-position');
 const bar=document.querySelector('.carousel-line>span');
+if(track&&prev&&next&&position&&bar){
 const cards=[...track.children];
 const step=()=>cards[0].getBoundingClientRect().width+parseFloat(getComputedStyle(track).gap);
 function updateCarousel(){if(!track.clientWidth||!cards[0].getBoundingClientRect().width)return;const index=Math.min(cards.length-1,Math.max(0,Math.round(track.scrollLeft/step())));const visible=Math.max(1,Math.round((track.clientWidth+parseFloat(getComputedStyle(track).gap))/step()));const end=Math.min(cards.length,index+visible);prev.disabled=track.scrollLeft<2;next.disabled=track.scrollLeft>=track.scrollWidth-track.clientWidth-3;position.textContent=visible>1?`${String(index+1).padStart(2,'0')}–${String(end).padStart(2,'0')} / 07`:`${String(index+1).padStart(2,'0')} / 07`;bar.style.width=`${(end/7)*100}%`;}
@@ -21,3 +22,4 @@ track.addEventListener('scroll',updateCarousel,{passive:true});
 track.addEventListener('keydown',e=>{if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();moveCarousel(e.key==='ArrowRight'?1:-1);}if(e.key==='Home'){e.preventDefault();track.scrollTo({left:0,behavior:reduced.matches?'instant':'smooth'});}if(e.key==='End'){e.preventDefault();track.scrollTo({left:track.scrollWidth,behavior:reduced.matches?'instant':'smooth'});}});
 window.addEventListener('resize',updateCarousel,{passive:true});updateCarousel();
 if('ResizeObserver' in window)new ResizeObserver(updateCarousel).observe(track);
+}
